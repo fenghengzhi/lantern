@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:18.10
 MAINTAINER li haixin <lihaixin@15099.net>
 WORKDIR /root
 RUN apt-get update  && \
