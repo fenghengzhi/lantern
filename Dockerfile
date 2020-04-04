@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 MAINTAINER li haixin <lihaixin@15099.net>
 WORKDIR /root
-RUN sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
+RUN mv /etc/apt/sources.list /etc/apt/sources.list.bak && \
         echo "deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse" >> /etc/apt/sources.list && \
         echo "deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse" >> /etc/apt/sources.list && \
         echo "deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse" >> /etc/apt/sources.list && \
